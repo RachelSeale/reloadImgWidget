@@ -1,0 +1,104 @@
+//Variables
+$white: #FFFFFF;
+$hover-blue: #757dad;
+$pinterest: #b3251a;
+$facebook: #4c4cb1;
+$twitter: #1aa6d4;
+
+body {
+	background-color: $white;
+}
+
+.image-container {
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+
+	.square-img {
+	  width: 100%;
+	  border-radius: 5px;
+	  position: relative;
+		min-height: 280px;
+		max-height: 280px;
+	}
+}
+
+.social-media-container {
+  position: absolute;
+	right: 0;
+	top: 80px;
+
+	.share-more-icon {
+		font-size: 22px;
+    color: white;
+    padding: 8px 10px;
+		background-color: #4A58E2;
+		display: inline-block;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		border-radius: 100px;
+		-moz-box-shadow: 0px 0px 2px #888;
+		-webkit-box-shadow: 0px 0px 2px #888;
+		box-shadow: 0px 0px 2px #888;
+	}
+
+	.social-media-block {
+	  list-style-type: none;
+	  background: $white;
+	  border-radius: 25px;
+	  padding: 0;
+	  li {
+			text-align: center;
+	    font-size: 24px;
+	    color: #c3c3c3;
+	    margin-top: 5px;
+
+			&:first-child {
+				padding-top: 5px;
+			}
+			&:last-child {
+				padding-bottom: 5px;
+			}
+	  }
+
+	  .fa-facebook:hover {
+	    color: $facebook;
+	  }
+
+	  .fa-twitter:hover {
+	    color: $twitter;
+	   }
+
+	   .fa-pinterest:hover {
+	     color: $pinterest;
+	   }
+	}
+}
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 1px 17px -3px #545454;
+	   -moz-box-shadow: 0 1px 17px -3px #545454;
+	        box-shadow: 0 1px 17px -3px #545454;
+}
+
+//BUTTONS
+.btn.secondary {
+	color: #BDBDBD;
+  background-color: $white;
+  border: 1px solid #DFDFDF;
+  margin-top: 10px;
+	width: 100%;
+
+  &:hover {
+    border-color: $hover-blue;
+    color: $hover-blue;
+  }
+}
+
+.reload-btn-container {
+	text-align: center;
+
+	.refresh-icon {
+		color: #BDBDBD
+	}
+}
